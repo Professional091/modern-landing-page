@@ -19,7 +19,7 @@ jobs:
           host: ${{ secrets.AZURE_VM_HOST }}
           username: ${{ secrets.AZURE_VM_USER }}
           key: ${{ secrets.AZURE_VM_SSH_KEY }}
-          source: "./modern-landing-page/*"
+          source: "./*"
           target: ${{ secrets.AZURE_VM_PATH }}
 
       - name: Restart nginx
